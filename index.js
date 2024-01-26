@@ -10,6 +10,12 @@ const user = {
     logout: function(){
         console.log('Bo`pti');
     },
+    speak: function (){
+        console.log('I can speak:');
+        this.lang.forEach((langs) => {
+            console.log(langs);
+        })
+    }
 }
 
 
@@ -19,5 +25,6 @@ console.log(user.name);
 
 user.login();
 user.logout();
+user.speak()
 
 
